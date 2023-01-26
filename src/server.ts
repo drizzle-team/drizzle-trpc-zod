@@ -1,7 +1,7 @@
 import { initTRPC, inferAsyncReturnType } from "@trpc/server";
 import { z } from "zod";
-import { drizzle } from "drizzle-orm-pg/postgres.js";
-import { migrate } from "drizzle-orm-pg/postgres.js/migrator";
+import { drizzle } from "drizzle-orm/postgres.js";
+import { migrate } from "drizzle-orm/postgres.js/migrator";
 import postgres from "postgres";
 import { users, apiUser, apiCreateUser } from "./schema";
 import { eq } from "drizzle-orm/expressions";
