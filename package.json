@@ -1,0 +1,30 @@
+{
+  "name": "drizzle-trpc-zod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "tsx src/server.ts",
+    "start:client": "tsx src/client.ts",
+    "generate": "drizzle-kit generate:pg --schema=src/schema.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.9.0",
+    "@trpc/server": "^10.9.0",
+    "dotenv": "^16.0.3",
+    "drizzle-orm": "^0.16.1",
+    "drizzle-orm-pg": "^0.16.3",
+    "drizzle-zod": "^0.1.2",
+    "express": "^4.18.2",
+    "postgres": "^3.3.3",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "drizzle-kit": "^0.16.6",
+    "tsx": "^3.12.2"
+  }
+}
